@@ -1,54 +1,54 @@
 console.log('Welcome :)');
 
-let dogName = "Leon";
+let dogName: string = "Leon";
 
 console.log(dogName);
 
-dogName = "elf";
+dogName  = "elf";
 
-let seventeen = 17;
+let seventeen: number = 17;
 
-const sum = seventeen +44;
+const sum: number = seventeen +44;
 
 console.log(sum);
 
-let num = 1;
+let num: number = 1;
 
 console.log("addition: ", 1 + num);
 console.log("substraction: ", 2 - num);
 console.log("division: ", 2 / num);
 console.log("modulus: ", 40 % 9);
 
-const x = 20;
-const y = 30;
+const x: number = 20;
+const y: number = 30;
 
-const addition = x + y;
+const addition: number = x + y;
 console.log(addition)
 
-const substraction1 = x - y;
+const substraction1: number = x - y;
 console.log(substraction1);
 
-const substraction2 = y - x;
+const substraction2: number = y - x;
 console.log(substraction2);
 
-const multiplication = x * y;
+const multiplication: number = x * y;
 console.log(multiplication);
 
-const division = x / y;
+const division: number = x / y;
 console.log(division);
 
-const z = 10;
+const z: number = 10;
 
-const resultOne = x * y / z;
+const resultOne: number = x * y / z;
 console.log(resultOne);
 
-let a = 15;
-let b = 9;
+let a: number = 15;
+let b: number = 9;
 
 console.log(a % b);
 
-const c = 20;
-const resultTwo = (a + b) * c;
+const c: number = 20;
+const resultTwo: number = (a + b) * c;
 console.log(resultTwo)
 
  a++;
@@ -57,7 +57,7 @@ console.log(a);
 b --;
 console.log(b);
 
-const resultThree = b - a;
+const resultThree: number = b - a;
 console.log(resultThree);
 
 console.log(resultOne % resultTwo);
@@ -77,7 +77,7 @@ score = 0;
 score += 10;  
 console.log('Ergebnis: ' + score);
 
-let zahl = 1;  
+let zahl: number = 1;  
 zahl = zahl + 1;  
 zahl += 1;
 

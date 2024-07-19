@@ -1,2 +1,2 @@
 import './style.css'
-import "./01_basic_ts/basic"
+// import "./01_basic_ts/basic"
