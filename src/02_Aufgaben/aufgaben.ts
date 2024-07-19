@@ -88,6 +88,16 @@ document.write(infoAboutSam.replace("school", "school and to the movie theater")
 document.write(infoAboutSam.replace("school", "the movie theater") + "<br>");
 document.write(susi2.concat(and) + infoAboutSam.replace("is", "are") + "<br>");
 
+let gymAndMovie = susi2.concat(and) + infoAboutSam.replace("is", "are");
+gymAndMovie = gymAndMovie.replace("gym", "school");
+gymAndMovie = gymAndMovie.concat(and) + "to the movie theater";
+
+document.write(gymAndMovie);
+
+let susi3 = infoAboutSam.replace("Sam", susi2) + and + "to the movie theater";
+
+document.write(susi3);
+
 // Aufgabe 01
 
 let num = 321;
