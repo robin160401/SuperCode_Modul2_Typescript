@@ -115,8 +115,8 @@ let d = test.toString(16);
 
 console.log(a);
 console.log(b);
+console.log(c);
 console.log(d);
-console.log(a);
 
 // Aufgabe 03
 
@@ -125,4 +125,4 @@ const y = Number(x);
 
 console.log(y);
 
-document.close()
+document.close();
