@@ -92,7 +92,7 @@ let gymAndMovie = susi2.concat(and) + infoAboutSam.replace("is", "are");
 gymAndMovie = gymAndMovie.replace("gym", "school");
 gymAndMovie = gymAndMovie.concat(and) + "to the movie theater";
 
-document.write(gymAndMovie);
+document.write(gymAndMovie + "<br>");
 
 let susi3 = infoAboutSam.replace("Sam", susi2) + and + "to the movie theater";
 
@@ -124,3 +124,5 @@ const x = "999";
 const y = Number(x);
 
 console.log(y);
+
+document.close()
