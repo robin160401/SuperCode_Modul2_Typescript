@@ -1,21 +1,29 @@
+body {
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .basketball {
     display: flex;
 }
 
 .scoreboard {
-    border: 10px solid yellow;
+    border-radius: 10px;
     height: 200px;
     width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
+    background-color: black;
 
 }
 
 p {
     font-size: 80px;
-    color: red;
+    color: yellow;
 }
 
 .score1 {
@@ -23,9 +31,49 @@ p {
 }
 
 button {
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
     flex-direction: row;
     margin-right: 11px;
     margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.green {
+    background-color: #97F5BB;
+}
+
+.greenborder {
+    border-color: #97F5BB;
+}
+
+.lila {
+    background-color: #525DF4;
+}
+
+.test {
+    width: 240px;
+    height: 240px;
+    border: 3px #525DF4 solid;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.test1 {
+    width: 240px;
+    height: 240px;
+    border: 3px #97F5BB solid;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: red;
 }

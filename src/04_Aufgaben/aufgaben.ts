@@ -154,7 +154,10 @@ if (button6Element) {
     button6Element.addEventListener("click", countPlusThree2);
 }
 
+const button7Element = document.getElementById("reset");
+
 function reset(event: MouseEvent){
+    event.preventDefault();
     counter1 = 0;
     counter2 = 0;
     if (counter2Element && counter1Element) {
@@ -162,3 +165,22 @@ function reset(event: MouseEvent){
         counter1Element.textContent = counter1.toString();
     }
 }
+
+if (button7Element){
+    button7Element.addEventListener("click", reset)
+}
+
+const team1Element = document.getElementById("team1");
+
+const team2Element = document.getElementById("team2");
+
+const team1Name: string | null = window.prompt("Team1 Name: ");
+
+const team2Name: string | null = window.prompt("Team2 Name: ");
+
+if (team1Element)
+team1Element.textContent = team1Name;
+
+if (team2Element)
+    team2Element.textContent = team2Name;
+
