@@ -235,7 +235,12 @@ if (checkNum === randomNumGame) {
 
 // Date Aufgabe 1
 
-document.open()
-const test = new Date("September 2, 2019 09:00:00");
+// document.open()
+// const test = new Date("September 2, 2019 09:00:00");
+// const test2 = new Date(0);
+// const test3 = new Date(31556908800);
+// const test4 = new Date(86400000);
 
-document.write("" + test)
+
+// document.write(test + "<br>");
+
