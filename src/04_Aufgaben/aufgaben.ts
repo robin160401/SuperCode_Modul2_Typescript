@@ -153,3 +153,12 @@ if (button5Element) {
 if (button6Element) {
     button6Element.addEventListener("click", countPlusThree2);
 }
+
+function reset(event: MouseEvent){
+    counter1 = 0;
+    counter2 = 0;
+    if (counter2Element && counter1Element) {
+        counter2Element.textContent = counter2.toString();
+        counter1Element.textContent = counter1.toString();
+    }
+}
