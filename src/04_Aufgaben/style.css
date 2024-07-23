@@ -1,19 +1,31 @@
 .basketball {
-    background-color: yellow;
     display: flex;
-    height: 100px;
 }
 
 .scoreboard {
-    border: 1px solid;
-    height: 90px;
-    width: 90px;
+    border: 10px solid yellow;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+
+}
+
+p {
+    font-size: 80px;
+    color: red;
 }
 
 .score1 {
     width: 300px;
 }
 
-.button {
-    height: 20px;
+button {
+    height: 40px;
+    width: 40px;
+    flex-direction: row;
+    margin-right: 11px;
+    margin-top: 10px;
 }

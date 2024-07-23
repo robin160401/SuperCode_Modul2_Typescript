@@ -68,3 +68,88 @@ function aboutMe(vorname: string, nachname: string, geburtsort: string, alter: n
 
 aboutMe("Robin", "Stumpf", "Kirchheimbolanden", 23, "Mannheim");
 
+// BonusAufgabe 
+
+let counter1 = 0;
+let counter2 = 0;
+const counter1Element = document.getElementById("counter1");
+const counter2Element = document.getElementById("counter2");
+
+const button1Element = document.getElementById("buttoncount-1");
+const button2Element = document.getElementById("buttoncount-2");
+const button3Element = document.getElementById("buttoncount-3");
+const button4Element = document.getElementById("buttoncount-4");
+const button5Element = document.getElementById("buttoncount-5");
+const button6Element = document.getElementById("buttoncount-6");
+
+function countPlusOne(event: MouseEvent) {
+    event.preventDefault();
+    counter1++;
+    if (counter1Element) {
+        counter1Element.textContent = counter1.toString();
+    }
+}
+
+function countPlusTwo(event: MouseEvent) {
+    event.preventDefault();
+    counter1 += 2;
+    if (counter1Element) {
+        counter1Element.textContent = counter1.toString();
+    }
+}
+
+function countPlusThree(event: MouseEvent) {
+    event.preventDefault();
+    counter1 += 3;
+    if (counter1Element) {
+        counter1Element.textContent = counter1.toString();
+    }
+}
+
+function countPlusOne2(event: MouseEvent) {
+    event.preventDefault();
+    counter2++;
+    if (counter2Element) {
+        counter2Element.textContent = counter2.toString();
+    }
+}
+
+function countPlusTwo2(event: MouseEvent) {
+    event.preventDefault();
+    counter2 += 2;
+    if (counter2Element) {
+        counter2Element.textContent = counter2.toString();
+    }
+}
+
+function countPlusThree2(event: MouseEvent) {
+    event.preventDefault();
+    counter2 += 3;
+    if (counter2Element) {
+        counter2Element.textContent = counter2.toString();
+    }
+}
+
+if (button1Element) {
+    button1Element.addEventListener("click", countPlusOne);
+}
+
+if (button2Element) {
+    button2Element.addEventListener("click", countPlusTwo);
+}
+
+if (button3Element) {
+    button3Element.addEventListener("click", countPlusThree);
+}
+
+if (button4Element) {
+    button4Element.addEventListener("click", countPlusOne2);
+}
+
+if (button5Element) {
+    button5Element.addEventListener("click", countPlusTwo2);
+}
+
+if (button6Element) {
+    button6Element.addEventListener("click", countPlusThree2);
+}
