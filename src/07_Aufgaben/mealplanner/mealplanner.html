@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="mealplanner.ts"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mealplanner</h1>
+    <form id="mealForm">
+        <input type="text" placeholder="Enter meal Name" id="mealInput">
+        <button type="submit">Add Meal</button>
+        <select name="week" id="weekSelector">
+            <option value="week1">Week 1</option>
+            <option value="week2">Week 2</option>
+            <option value="week3">Week 3</option>
+            <option value="week4">Week 4</option>
+        </select>
+    </form>
+    <h2>Week </h2>
+    <ul id="mealList"></ul>
+</body>
+</html>
