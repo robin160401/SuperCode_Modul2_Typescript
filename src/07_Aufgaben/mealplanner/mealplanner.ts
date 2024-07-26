@@ -4,10 +4,10 @@
  const mealForm = document.getElementById('mealForm') as HTMLFormElement;
 
 
-const arrayWeek1: string[] = ["hi1"];
-const arrayWeek2: string[] = ["hi2"];
-const arrayWeek3: string[] = ["hi3"];
-const arrayWeek4: string[] = ["hi4"];
+const arrayWeek1: string[] = [];
+const arrayWeek2: string[] = [];
+const arrayWeek3: string[] = [];
+const arrayWeek4: string[] = [];
 
 console.log(weekSelector)
 
