@@ -2,6 +2,7 @@
  const weekSelector = document.getElementById('weekSelector') as HTMLSelectElement;
  const mealList = document.getElementById('mealList') as HTMLUListElement;
  const mealForm = document.getElementById('mealForm') as HTMLFormElement;
+ const weekShow = document.getElementById('weekH2');
 
 
 const arrayWeek1: string[] = [];
@@ -39,20 +40,27 @@ function addMeal(event: Event){
 function update(week: string) {
     mealList.innerHTML = "";
     let currentWeek: string[] = [];
-    switch (week) {
-        case "week2":
-            currentWeek = arrayWeek2;
-            break;
-        case "week3":
-            currentWeek = arrayWeek3;
-            break;
-        case "week4":
-            currentWeek = arrayWeek4;
-            break;
-        default:
-            currentWeek = arrayWeek1;
-    }
 
+    if (weekShow){
+        switch (week) {
+            case "week2":
+                currentWeek = arrayWeek2;
+                weekShow.textContent = "Week 2";
+                break;
+            case "week3":
+                currentWeek = arrayWeek3;
+                weekShow.textContent = "Week 3";
+                break;
+            case "week4":
+                currentWeek = arrayWeek4;
+                weekShow.textContent = "Week 4";
+                break;
+            default:
+                currentWeek = arrayWeek1;
+                weekShow.textContent = "Week 1";
+        }
+    }
+    
     currentWeek.forEach((meal) => {
         const listItem = document.createElement('li');
         listItem.textContent = meal;

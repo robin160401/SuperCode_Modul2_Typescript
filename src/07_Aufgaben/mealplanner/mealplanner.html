@@ -8,10 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Mealplanner</h1>
+    <h1>Meal Planner</h1>
     <form id="mealForm">
-        <input type="text" placeholder="Enter meal Name" id="mealInput">
+        <div class="inline">
+            <input type="text" placeholder="Enter meal Name" id="mealInput">
         <button type="submit">Add Meal</button>
+        </div>
         <select name="week" id="weekSelector">
             <option value="week1">Week 1</option>
             <option value="week2">Week 2</option>
@@ -19,7 +21,7 @@
             <option value="week4">Week 4</option>
         </select>
     </form>
-    <h2>Week </h2>
+    <h2 id="weekH2">Week 1</h2>
     <ul id="mealList"></ul>
 </body>
 </html>

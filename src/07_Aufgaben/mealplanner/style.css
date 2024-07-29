@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.inline {
+    text-align: center;
+}
+
+input {
+    margin: 1rem 0.2rem;
+    width: 40rem;
+    height: 2rem;
+}
+
+button {
+    height: 2rem;
+    width: 6rem;
+    color: white;
+    background-color: blue;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+select {
+    height: 2rem;
+    width: 5rem;
+    border-color: lightgray;
+    border-radius: 0.3rem;
+}
+
+li {
+    list-style: none;
+    border: 1px solid lightgray;
+    width: 46.5rem;
+    height: 2rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    background-color: rgba(242, 242, 242, 0.992);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
