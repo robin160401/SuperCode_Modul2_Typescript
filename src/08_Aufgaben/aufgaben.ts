@@ -90,10 +90,6 @@ function writeLoop(event: Event){
     const arrayForLoop: string[] = ["L"]
     if (num === 0){
         window.alert("So nicht!");
-    } else if (num % 2 === 0){
-        for (let i = 0; i < num; i++){
-        arrayForLoop.push("o")
-        }
     } else {
         for (let i = 0; i < num; i++){
             if (i % 2 === 0) {
