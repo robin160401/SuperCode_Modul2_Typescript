@@ -88,9 +88,18 @@ function writeLoop(event: Event){
     event.preventDefault();
     let num = parseInt(zahlFürO.value);
     const arrayForLoop: string[] = ["L"]
+    
     if (num === 0){
         window.alert("So nicht!");
-    } else {
+    }
+
+    else if (num % 2 === 0) {
+        for (let i = 0; i < num; i++){ 
+            arrayForLoop.push("o");
+        }
+    }
+
+    else {
         for (let i = 0; i < num; i++){
             if (i % 2 === 0) {
                 arrayForLoop.push("o");
