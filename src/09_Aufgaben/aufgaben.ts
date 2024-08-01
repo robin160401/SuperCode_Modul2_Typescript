@@ -120,7 +120,7 @@ function rot13(text: string):string {
         else {
             asciiRot13.push(textUpper[i].charCodeAt(0));
         }
-    };
+    }
     for (let i = 0; i < asciiRot13.length; i++){
         textArrayRot13.push(String.fromCharCode(asciiRot13[i]));
     }
