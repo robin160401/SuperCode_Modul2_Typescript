@@ -258,7 +258,7 @@ const singersTwo: SingerTwo[] = [
 ];
 
 const table = document.getElementById("table-container")
-const inputField = document.getElementById("searchInput") as       HTMLInputElement;
+const inputField = document.getElementById("searchInput") as   HTMLInputElement;
 const searchButton = document.getElementById("search-button") as HTMLButtonElement;
 const name = document.createElement("h3") as HTMLElement;
 const country = document.createElement("h3") as HTMLElement; 
@@ -283,7 +283,6 @@ period.innerHTML = "";
 genre.innerHTML = "";
 singersTwo.forEach((singer) => {
     if (singer.name.toLowerCase().includes(inputField.value.toLowerCase())){
-        console.log(singer);
         const bandSinger = document.createElement("p");
         const countrySinger = document.createElement("p");
         const periodSinger = document.createElement("p");
@@ -294,13 +293,12 @@ singersTwo.forEach((singer) => {
         countrySinger.textContent = singer.country;
         genreSinger.textContent = singer.genre;
 
-        name.appendChild(bandSinger);
-        country.appendChild(countrySinger);
-        period.appendChild(periodSinger);
-        genre.appendChild(genreSinger);
+        table!.appendChild(bandSinger);
+        table!.appendChild(countrySinger);
+        table!.appendChild(periodSinger);
+        table!.appendChild(genreSinger);
         }
     })
-  }
+}
 
-  searchButton.addEventListener("click", search);
-
+searchButton.addEventListener("click", search);
