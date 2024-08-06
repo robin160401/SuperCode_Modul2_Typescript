@@ -11,7 +11,6 @@ function calculate(event: Event){
     const rechnungsbetrag = Number(rechnungsInput.value);
     const personenzahl = Number(personenInput.value);
     const serviceFee = Number(selectInput.value);
-    console.log(serviceFee);
 
     if (serviceFee === 0){
         trinkgeldText.textContent = "Bitte wähle eine Option aus"
