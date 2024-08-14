@@ -1,0 +1,6 @@
+div {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    margin: 1rem;
+}
