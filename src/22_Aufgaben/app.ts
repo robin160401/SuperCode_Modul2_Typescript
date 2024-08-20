@@ -8,13 +8,13 @@ import Vocabulary from "./classes/Vocabulary";
 import SpanishVocabulary from "./classes/SpanishVocabulary";
 
 // Aufgabe 1
-const alien1 = new Alien("Zorg", "green");
+const alien1 = new Alien("Gala", "green");
 alien1._planet = "Mars";
 alien1._galaxy = "Milky Way";
 
-const alien2 = new Alien("Blorg", "blue");
+const alien2 = new Alien("Hozho", "blue");
 
-const alien3 = new Alien("Xenon", "red");
+const alien3 = new Alien("Usher", "red");
 
 console.log(`Alien 1: ${alien1._name}, from Planet ${alien1._planet}, in Galaxy ${alien1._galaxy}, has the Color ${alien1.getColor}`);
 
