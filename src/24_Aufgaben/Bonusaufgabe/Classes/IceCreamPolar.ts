@@ -10,7 +10,6 @@ class IceCreamPolar implements IIceCreamService {
         this.flavors.forEach((flavor: PriceAndFlavor) => {
             arrayOfFlavors.push(flavor.flavor);
         })
-        console.log(arrayOfFlavors);
         return arrayOfFlavors;
     }
     orderIceCream(flavor: string, scoops: number): string {
