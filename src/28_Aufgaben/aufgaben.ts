@@ -90,3 +90,101 @@ function countdownAlertAway() {
 }
 
 countdownAlertAway();
+
+// Bonusaufgabe
+
+const minutesInput = document.getElementById("minutes") as HTMLInputElement;
+const startButton1 = document.getElementById("start-button") as HTMLButtonElement;
+const pauseButton = document.getElementById("pause-button") as HTMLButtonElement;
+const resetButton = document.getElementById("restart-button") as HTMLButtonElement;
+const showTime = document.getElementById("time") as HTMLDivElement;
+
+let countdown1: number = 0;
+let interval: number = 0;
+let num1 = 0;
+let num2 = 0;
+let num3 = 5;
+let num4 = 9;
+let firstCall: boolean = false;
+
+function check(){
+    if (firstCall == false){
+        runCountdown();
+    }
+}
+
+function runCountdown(){
+    firstCall = true;
+    const minutes = Number(minutesInput.value);
+    if (minutes < 10){
+        num2 = minutes;
+    } 
+    else {
+        num1 = Math.floor(minutes / 10);
+        num2 = minutes % 10;
+    }
+
+    countdown1 = minutes * 60;
+    
+    interval = setInterval(function() {
+        if (countdown1 > 0) {
+            if (countdown1 % 600 == 0){
+                num1 --;
+                num2 = 9;
+                num3 = 5;
+                num4 = 9;
+            } else if (countdown1 % 60 == 0){
+                num2 --;
+                num3 = 5;
+                num4 = 9;
+            } else if (countdown1 % 10 == 0) {
+                num3 --;
+                num4 = 9;
+            } else {
+                num4 --;
+            }
+        }
+        else {
+            clearInterval(interval);
+        }
+        showTime.innerText = `${num1}${num2}:${num3}${num4}`
+        countdown1--;
+    }, 500);
+}
+
+function pauseFunction(){
+    clearInterval(interval);
+}
+
+function restartFunction(){
+    interval = setInterval(function() {
+        if (countdown1 > 0) {
+            if (countdown1 % 600 == 0){
+                num1 --;
+                num2 = 10;
+                num2 --;
+                num3 = 5;
+                num4 = 9;
+            } else if (countdown1 % 60 == 0){
+                num2 --;
+                num3 = 6;
+                num3 --;
+                num4 = 9;
+            } else if (countdown1 % 10 == 0) {
+                num3 --;
+                num4 = 9;
+            } else {
+                num4 --;
+            }
+        }
+        else {
+            clearInterval(interval);
+        }
+        showTime.innerText = `${num1}${num2}:${num3}${num4}`
+        countdown1--;
+    }, 500);
+}
+
+pauseButton?.addEventListener("click",  pauseFunction);
+resetButton?.addEventListener("click", restartFunction);
+startButton1?.addEventListener("click", check);
