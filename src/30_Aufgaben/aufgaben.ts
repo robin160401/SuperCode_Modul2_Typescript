@@ -128,8 +128,8 @@ generateLoremIpsum(9)
         return words.map(word => word.toUpperCase());
     }).then(upperWords => {
         return upperWords.map(word => word.replace("L", "").replace("T", "").replace("U", ""));
-    }).then(modifiedWords => {
-        return modifiedWords.filter(word => word.length <= 8);
+    }).then(lessLettersWords => {
+        return lessLettersWords.filter(word => word.length <= 8);
     }).then(filteredWords => {
         const finalString = filteredWords.join(" ");
         console.log(finalString);
