@@ -126,30 +126,7 @@ function runCountdown(){
 
     countdown1 = minutes * 60;
     
-    interval = setInterval(function() {
-        if (countdown1 > 0) {
-            if (countdown1 % 600 == 0){
-                num1 --;
-                num2 = 9;
-                num3 = 5;
-                num4 = 9;
-            } else if (countdown1 % 60 == 0){
-                num2 --;
-                num3 = 5;
-                num4 = 9;
-            } else if (countdown1 % 10 == 0) {
-                num3 --;
-                num4 = 9;
-            } else {
-                num4 --;
-            }
-        }
-        else {
-            clearInterval(interval);
-        }
-        showTime.innerText = `${num1}${num2}:${num3}${num4}`
-        countdown1--;
-    }, 500);
+    countdowner();
 }
 
 function pauseFunction(){
@@ -157,6 +134,14 @@ function pauseFunction(){
 }
 
 function restartFunction(){
+    countdowner();
+}
+
+pauseButton?.addEventListener("click",  pauseFunction);
+resetButton?.addEventListener("click", restartFunction);
+startButton1?.addEventListener("click", check);
+
+function countdowner(){
     interval = setInterval(function() {
         if (countdown1 > 0) {
             if (countdown1 % 600 == 0){
@@ -184,7 +169,3 @@ function restartFunction(){
         countdown1--;
     }, 500);
 }
-
-pauseButton?.addEventListener("click",  pauseFunction);
-resetButton?.addEventListener("click", restartFunction);
-startButton1?.addEventListener("click", check);
