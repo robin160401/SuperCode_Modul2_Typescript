@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Pokemon-Logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input, button {
+    margin-top: 15rem;
+    height: 2rem;
+}
+
+ .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+ }
+
+ .pokemonCard {
+    border: 0.6rem solid orange;
+    width: 15rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+ }
+
+ img {
+    border: 2px solid orange;
+    background-image: url(img/R8k0PHQzRi2CjW7hoZs1_g.webp);
+    background-size: cover;
+    background-position: bottom;
+    height:9rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+ }
+
+ #familyHeightWeight {
+    font-size: 10px;
+    text-align: center;
+ }
+
+ h2 {
+    font-size: 16px;
+ }
+
+ #abilitie1 {
+    border-bottom: 1px solid black;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: bold;
+ }
+
+ #abilitie2 {
+    padding-top: 1rem;
+    border-bottom: 1px solid black;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+ }
+
+.attacks {
+    margin: 0.5rem;
+    width: 90%;
+}
