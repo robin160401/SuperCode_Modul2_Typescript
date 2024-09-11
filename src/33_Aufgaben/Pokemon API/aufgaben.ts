@@ -41,7 +41,7 @@ function fetchPokemons() {
 }
 
 function createPokemonCard(pokemonInfos: any) {
-    const backgroundImage = pokemonInfos.sprites.front_default;
+    const pokemonImage = pokemonInfos.sprites.front_default;
     let pokemonName = pokemonInfos.name;
     let pokemonNameArray = pokemonName.split("");
     pokemonNameArray[0] = pokemonNameArray[0].toUpperCase();
@@ -55,7 +55,7 @@ function createPokemonCard(pokemonInfos: any) {
     (cardContainer.querySelector("#name") as HTMLElement).textContent = pokemonName;
     (cardContainer.querySelector("#abilitie1") as HTMLElement).textContent = abilitiesArray[0];
     (cardContainer.querySelector("#abilitie2") as HTMLElement).textContent = abilitiesArray[1];
-    (cardContainer.querySelector("#img") as HTMLImageElement).src = backgroundImage;
+    (cardContainer.querySelector("#img") as HTMLImageElement).src = pokemonImage;
     (cardContainer.querySelector("#familyHeightWeight") as HTMLImageElement).textContent = `${pokemonName} is ${pokemonInfos.height / 10} meters tall and has a weight of ${pokemonInfos.weight / 10}kg`;
     (cardContainer.querySelector("#kp") as HTMLElement).textContent = pokemonInfos.stats[0].base_stat.toString() + " HP";
     cardContainer.setAttribute("id", "check");
@@ -124,8 +124,8 @@ function createPokemonCard(pokemonInfos: any) {
 }
 
 function getPokemonIdFromUrl(url: string): number {
-    const parts = url.split("/").filter(Boolean);
-    return parseInt(parts[parts.length - 1]);
+    const parts = url.split("/");
+    return Number(parts[parts.length - 1]);
 }
 
 function clearPokemonCards() {
