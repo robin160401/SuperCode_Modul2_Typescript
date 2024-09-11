@@ -1,31 +1,32 @@
-type Abilitie = {
-    name: string;
-}
+// type Abilitie = {
+//     name: string;
+// }
 
-type Sprite = {
-    front_default: string;
-}
+// type Sprite = {
+//     front_default: string;
+// }
 
-type TypePok = {
-    name: string;
-    url: string;
-}
+// type TypePok = {
+//     name: string;
+//     url: string;
+// }
 
-type Types = {
-    slot: number;
-    type: TypePok;
-}
+// type Types = {
+//     slot: number;
+//     type: TypePok;
+// }
 
-type Stats = {
-    base_stat: number;
-}
+// type Stats = {
+//     base_stat: number;
+// }
 
 
-export interface IPokemonInfos {
-    abilities: Abilitie[];
-    types: Types[];
-    sprites: Sprite;
-    weight: number;
-    height: number;
-    stats: Stats[];
-}
+// export interface IPokemonInfos {
+//     order: number;
+//     abilities: Abilitie[];
+//     types: Types[];
+//     sprites: Sprite;
+//     weight: number;
+//     height: number;
+//     stats: Stats[];
+// }

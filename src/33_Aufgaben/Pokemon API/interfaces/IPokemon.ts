@@ -1,6 +1,6 @@
-interface IPokemon {
-    name: string;
-    url: string;
-}
+// interface IPokemon {
+//     name: string;
+//     url: string;
+// }
 
-export default IPokemon;
+// export default IPokemon;
